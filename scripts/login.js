@@ -121,7 +121,7 @@ async function main() {
       await notifyTelegram({ ok: true, stage: '进入服务器页面', msg: '已成功打开服务器详情', screenshotPath: spServer });
 
       // **点击 Console 菜单**
-      const consoleMenu = page.locator('a[href="/server/46661"].active');
+      const consoleMenu = page.locator('a[href="/server/905b58df"].active');
       await consoleMenu.waitFor({ state: 'visible', timeout: 15_000 });
       await consoleMenu.click({ timeout: 5_000 });
 
